@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website',
     'main_website.apps.MainWebsiteConfig',
+    'users_auth.apps.UsersAuthConfig',
 ]
 
 MIDDLEWARE = [

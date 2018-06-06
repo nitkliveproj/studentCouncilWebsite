@@ -30,7 +30,7 @@ var TxtType = function(el, toRotate, period) {
         this.isDeleting = true;
         if(this.loopNum == this.toRotate.length-1)
         {    
-            this.el.innerHTML = "<span class=\"wrap\" style=\" border-right=none;\">| NITK Student Council |</span>";
+            this.el.innerHTML = "<span class=\"wrap\" style=\" border-right=none; font-weight:bold\">| NITK Student Council |</span>";
             return;
         }
         } else if (this.isDeleting && this.txt === '') {
@@ -56,6 +56,6 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { color:white; font-family:'Iceland'; font-weight : bold;font-size:40px;}";
+        css.innerHTML = ".typewrite > .wrap { color:white; font-family:'Iceland'; font-weight : bold;font-size:20px;}";
         document.body.appendChild(css);
     };
