@@ -50,13 +50,16 @@
             }
             .pr-detail:hover .only-img{
                 background-color:#a5c6ff;
+
                 box-shadow: 0 10px 15px #ddd;
+
                 position:absolute;
                 z-index:1;
             }
             .detail {
                 display:none;
             }
+
             .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  {
                 color: #495057 !important;
 
@@ -66,6 +69,8 @@
             }
         </style>
 
+
+        </style>
 	</head>
 
 	<body style="background-image: url({% static 'main_website/images/beach.jpg'%});background-size: cover;">
@@ -173,6 +178,12 @@
                 <div class="nav nav-tabs " id="nav-tab" role="tablist">
                     <a class="col-lg-1"></a>
                     <a class="nav-item nav-link active col-lg-2" id="nav-core_member-tab" data-toggle="tab" href="#nav-core_member" role="tab" aria-controls="nav-core_member" aria-selected="true" >Core Members</a>
+
+        <div class="container rounded" style="margin-top: 20px;padding-top: 15px;background-color: white;">
+            <nav>
+                <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                    <a class="col-lg-1"></a>
+                    <a class="nav-item nav-link active col-lg-2" id="nav-core_member-tab" data-toggle="tab" href="#nav-core_member" role="tab" aria-controls="nav-core_member" aria-selected="true">Core Members</a>
                     <a class="nav-item nav-link col-lg-2" id="nav-team_engineer-tab" data-toggle="tab" href="#nav-team_engineer" role="tab" aria-controls="nav-team_engineer" aria-selected="false">Team Engineer</a>
                     <a class="nav-item nav-link col-lg-2" id="nav-team_incident-tab" data-toggle="tab" href="#nav-team_incident" role="tab" aria-controls="nav-team_incident" aria-selected="false">Team Incident</a>
                     <a class="nav-item nav-link col-lg-2" id="nav-secretaries-tab" data-toggle="tab" href="#nav-secretaries" role="tab" aria-controls="nav-secretaries" aria-selected="false">Secretaries</a>
