@@ -36,6 +36,28 @@
 				text-decoration :none;
 				width: 300px;
 			}
+			.fa {
+    			padding: 20px;
+    			width: 35px;
+    			height: 35px;
+    			text-align: center;
+    			text-decoration: none;
+    			border-radius: 50%;
+			}
+			.fa-facebook {
+    			padding-left: 12px;
+    			padding-top: 10px;
+  				background: #3B5998;
+  				color: white;
+  				font-size: 17px;
+			}
+			.fa-instagram {
+				padding-left: 12px;
+    			padding-top: 10px;
+  				background: #125688;
+  				color: white;
+  				font-size: 17px;
+			}
 			
 		</style>
 	
@@ -67,7 +89,7 @@
 	      					<div class="dropdown-menu">
 	        					<a class="dropdown-item text-info" href="#">Message from the President</a>
 	        					<div class="dropdown-divider"></div>
-	        					<a class="dropdown-item text-info" href="#">Meet the Representatives</a>
+	        					<a class="dropdown-item text-info" href="represent/">Meet the Representatives</a>
 	        					<div class="dropdown-divider"></div>
 					        	<a class="dropdown-item text-info" href="#">Announcements</a>
 	        					<div class="dropdown-divider"></div>
@@ -139,10 +161,10 @@
 
 		<div class="container-fluid ">
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-sm-3" style="margin-top: -21px;">
 					<div class="text-center center"><i class="fa fa-newspaper-o " style="font-size:45px;color: white;"></i>
 					</div>
-					<div class="card center" style="height: 300px; margin-top: 10px;">
+					<div class="card center" style="height: 300px; margin-top: 16px;">
 						<div class="card-header text-dark text-center font-weight-bold">What's News?</div>
 						<div class="card-body newsholder">
 							<marquee direction="up" scrollamount="1.7" scrolldelay="3" onmouseover="this.stop()" onmouseout="this.start()">
@@ -283,25 +305,37 @@
 			</div>
 		</div>
 		<br/><br/><br/>
-		<div class="fixed-bottom">			
-			<div class="container-fluid">
-				<div class="row bg-dark clearfix" >
-					<div class="float-left col-sm-4 text-center text-white">
-						<button class="btn bg-dark"><a class="text-white font-weight-bold" href="#" >About Us</a></button>
+		<div class="">
+			<div class="container-fluid col-lg-12 " style="margin-top: 20px; ">
+				<nav class="navbar navbar-expand-xl bg-dark navbar-dark rounded sticky-top" style="display: block;">
+
+					<div class="col-lg-12">
+						<p class="col-lg-12 text-white center " style="text-align: center;" >NITK Student Council </p>
 					</div>
-					<div class="col-sm-4 text-center " >
-						<a href="#"><i class="fa fa-facebook-square" style="font-size: 36px;color:#3b5998;"></i></a>
-						<a class="ml-4" href="#" ><i class="fa fa-instagram" style="font-size: 36px;color:#e4405f;"></i></a>
+					<hr color="white" style="width: 1350px;"/>
+					<div class="row" style="margin-bottom: -10px;">
+						<div class="col-lg-4" style="text-align:center; color:white;">
+							<a>About Us</a>
+							<p style="font-size: 10px;font-style: italic;color: gray;">To know more about the Student Council</p>
+						</div>
+						<div class="col-lg-4" style="text-align:center;">
+							<a class="face-icon" ><i class="fa fa-facebook"></i></a>
+
+							<a class="face-icon" style="margin-left: 30px;"><i class="fa fa-instagram"></i></a>
+						</div>
+						<div class="col-lg-4" style="text-align:center;color:white;">
+							<a>Contact Us</a>
+							<p style="font-size: 10px;font-style: italic;color: gray;">email-student_council@gmail.com</p>
+						</div>
 					</div>
-					<div class="float-right col-sm-4 text-center text-white ">
-						<button class="btn bg-dark"><a class="text-center text-white font-weight-bold" href="#" >Contact Us</a></button>
+
+					<div style="text-align:center; color:gray;  background-color: #00000024;">
+						Developed By: NITK-MCA
 					</div>
-				</div>
+
+
+				</nav>
 			</div>
-			
-			<footer class="text-center" style="height: 20px;background-color: black;top:0px" >
-				<p class="text-light small m-0 p-0" >Developed by NITK-MCA</p>
-	  		</footer>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
