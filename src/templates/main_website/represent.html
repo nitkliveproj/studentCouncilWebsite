@@ -10,64 +10,53 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style type="text/css">
 			.nounderline
-			{text-decoration: none;}
+			{
+			    text-decoration: none;
+			}
 			.fa {
-    padding: 20px;
-    width: 35px;
-    height: 35px;
+                padding: 20px;
+                width: 35px;
+                height: 35px;
 
 
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-.fa-facebook {
-    padding-left: 12px;
-    padding-top: 10px;
-  background: #3B5998;
-  color: white;
-  font-size: 17px;
-}
-.fa-instagram {
-	padding-left: 12px;
-    padding-top: 10px;
-  background: #125688;
-  color: white;
-  font-size: 17px;
-}
-.nav-item{
-        text-align:center;
-}
-
-
-.pr-detail:hover .detail{
-    text-align:center;
-
-    display:inline-block !important;
-}
-.pr-detail:hover p{
-    width: 180px;
-    word-wrap: break-word !important;
-
-}
-.pr-detail:hover .only-img{
-background-color:#12841296;
-position:absolute;
-    z-index:1;
-}
-.detail {
-    display:none;
-}
-
-
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+            .fa-facebook {
+                padding-left: 12px;
+                padding-top: 10px;
+                background: #3B5998;
+                color: white;
+                font-size: 17px;
+            }
+            .fa-instagram {
+	            padding-left: 12px;
+                padding-top: 10px;
+                background: #125688;
+                color: white;
+                font-size: 17px;
+            }
+            .nav-item{
+                text-align:center;
+            }
+            .pr-detail:hover .detail{
+                text-align:center;
+                display:inline-block !important;
+            }
+            .pr-detail:hover p{
+                width: 190px;
+                word-wrap: break-word !important;
+            }
+            .pr-detail:hover .only-img{
+                background-color:#12841296;
+                position:absolute;
+                z-index:1;
+            }
+            .detail {
+                display:none;
+            }
         </style>
-        <script>
-
-
-
-
-
-        </script>
 	</head>
 
 	<body style="background-image: url({% static 'main_website/images/beach.jpg'%});background-size: cover;">
@@ -185,38 +174,37 @@ position:absolute;
 
                 <div class="tab-pane fade show active" id="nav-core_member" role="tabpanel" aria-labelledby="nav-core_member-tab" >
                     <div class="row col-lg-12" style="display:inline-flex;">
-                        <div class="col-lg-4 pr-detail " style="text-align:center;  ">
+                        <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
-    margin-right: 70px; text-align:center;">
-                                <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="width: 160px;"/>
-                                <p class="" style="margin-top: 10px;">PRESIDENT</p>
-
-                                <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
-                                </div>
+    margin-right: 70px; ">
+                            <img class="rounded-circle fixed" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
+                            <p class="" style="margin-top: 10px;">PRESIDENT</p>
+                            <div class="detail" >
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
+                            </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; ">
-                            <img class="rounded-circle fixed" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                            <img class="rounded-circle fixed" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">VICE PRESIDENT</p>
                             <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                             </div>
                             </div>
                         </div>
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                            <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                            <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">GENERAL SECRETARY</p>
                             <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                             </div>
                             </div>
                         </div>
@@ -225,33 +213,33 @@ position:absolute;
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                                <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                                <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">JOINT SECRETARY UG</p>
                                 <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                                 </div>
                               </div>
                         </div>
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                                <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                                <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">JOINT SECRETARY PG/PhD</p>
                                 <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                                <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                                <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">PG/PhD GIRLS REP</p>
                                 <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -264,12 +252,12 @@ position:absolute;
                         <div class="col-lg-4 pr-detail " style="text-align:center;  ">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                                <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="width: 160px;"/>
+                                <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">CONVENOR</p>
 
                                 <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -277,22 +265,22 @@ position:absolute;
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                            <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                            <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">TREASURER</p>
                             <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                             </div>
                             </div>
                         </div>
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                            <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                            <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">JOINT CONVENOR</p>
                             <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                             </div>
                             </div>
                         </div>
@@ -303,12 +291,12 @@ position:absolute;
                         <div class="col-lg-4 pr-detail " style="text-align:center;  ">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                                <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="width: 160px;"/>
+                                <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">CONVENOR</p>
 
                                 <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -316,22 +304,22 @@ position:absolute;
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                            <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                            <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">TREASURER</p>
                             <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                             </div>
                             </div>
                         </div>
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                            <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                            <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">JOINT CONVENOR</p>
                             <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                             </div>
                             </div>
                         </div>
@@ -343,12 +331,12 @@ position:absolute;
                         <div class="col-lg-4 pr-detail " style="text-align:center;  ">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                                <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="width: 160px;"/>
+                                <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">Technical Secretary PG </p>
 
                                 <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -356,11 +344,11 @@ position:absolute;
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                            <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                            <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">Technical Secretary UG </p>
                             <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                             </div>
                             </div>
                         </div>
@@ -372,12 +360,12 @@ position:absolute;
                         <div class="col-lg-4 pr-detail " style="text-align:center;  ">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                                <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="width: 160px;"/>
+                                <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">Cultural Secretary PG</p>
 
                                 <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -385,11 +373,11 @@ position:absolute;
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
-                            <img class="rounded-circle" src="../../static/site/img/presi.jpg" style="    width: 160px;"/>
+                            <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">Cultural Secretary UG</p>
                             <div class="detail" >
-                                    <p class="" style="margin-top: 10px;">HIMANSHU SHARMA</p>
-                                    <p class="" style="margin-top: 10px;">himamnshu.sharma@gmail.com</p>
+                                    <p class="" style="margin-top: 10px;">Candidate Name</p>
+                                    <p class="" style="margin-top: 10px;">temp.email@gmail.com</p>
                             </div>
                             </div>
                         </div>
