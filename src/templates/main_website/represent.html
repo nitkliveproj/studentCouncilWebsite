@@ -49,7 +49,7 @@
                 word-wrap: break-word !important;
             }
             .pr-detail:hover .only-img{
-                background-color:#12841296;
+                background-color:#a5c6ff;
                 position:absolute;
                 z-index:1;
             }
@@ -88,7 +88,7 @@
 	      					<div class="dropdown-menu">
 	        					<a class="dropdown-item text-info" href="#">Message from the President</a>
 	        					<div class="dropdown-divider"></div>
-	        					<a class="dropdown-item text-info" href="represent/">Meet the Representatives</a>
+	        					<a class="dropdown-item text-info" href="{% url 'represent' %}">Meet the Representatives</a>
 	        					<div class="dropdown-divider"></div>
 					        	<a class="dropdown-item text-info" href="#">Announcements</a>
 	        					<div class="dropdown-divider"></div>
@@ -173,7 +173,7 @@
             <div class="tab-content" id="nav-tabContent" style="margin-top:50px;padding-bottom:125px;">
 
                 <div class="tab-pane fade show active" id="nav-core_member" role="tabpanel" aria-labelledby="nav-core_member-tab" >
-                    <div class="row col-lg-12" style="display:inline-flex;">
+                    <div class="row col-lg-12" style="display:inline-flex;margin-left: 0px;padding-bottom: 10px;">
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; ">
@@ -209,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row col-lg-12" style="display:inline-flex;margin-top: 40px; position:;">
+                    <div class="row col-lg-12" style="display:inline-flex;margin-top: 40px;margin-left: 0px;padding-bottom: 10px;">
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
@@ -244,11 +244,9 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
                 <div class="tab-pane fade" id="nav-team_engineer" role="tabpanel" aria-labelledby="nav-team_engineer-tab">
-                    <div class="row col-lg-12" style="display:inline-flex;">
+                    <div class="row col-lg-12" style="display:inline-flex;margin-left: 0px;padding-bottom: 10px;">
                         <div class="col-lg-4 pr-detail " style="text-align:center;  ">
                             <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
     margin-right: 70px; text-align:center;">
@@ -287,10 +285,9 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-team_incident" role="tabpanel" aria-labelledby="nav-team_incident-tab">
-                    <div class="row col-lg-12" style="display:inline-flex;">
+                    <div class="row col-lg-12" style="display:inline-flex;margin-left: 0px;padding-bottom: 10px;">
                         <div class="col-lg-4 pr-detail " style="text-align:center;  ">
-                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
-    margin-right: 70px; text-align:center;">
+                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;margin-right: 70px; text-align:center;">
                                 <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">CONVENOR</p>
 
@@ -326,11 +323,14 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-secretaries" role="tabpanel" aria-labelledby="nav-secretaries-tab">
+                    <div style="margin-bottom:10px;">
+                        <span class="col-sm-12 navbar-text text-black" style="text-align: center;margin-top: -16px;font-size:25px;font-family: -webkit-pictograph;font-style: initial;">Technical Secretaries </span>
+                    </div>
                     <div class="row col-lg-12" style="display:inline-flex;">
+
                         <div class="col-lg-2"></div>
                         <div class="col-lg-4 pr-detail " style="text-align:center;  ">
-                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
-    margin-right: 70px; text-align:center;">
+                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;margin-right: 70px; text-align:center;">
                                 <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">Technical Secretary PG </p>
 
@@ -342,8 +342,7 @@
                         </div>
 
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
-                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
-    margin-right: 70px; text-align:center;">
+                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;margin-right: 70px; text-align:center;">
                             <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">Technical Secretary UG </p>
                             <div class="detail" >
@@ -355,11 +354,14 @@
                         <div class="col-lg-2"></div>
 
                     </div>
+                    <div>
+                        <span class="col-sm-12 navbar-text text-black" style="text-align: center;font-size:25px;font-family: -webkit-pictograph;font-style: initial;margin-top: 16px;
+    margin-bottom: 10px;">Cultural Secretaries </span>
+                    </div>
                     <div class="row col-lg-12" style="display:inline-flex;">
                         <div class="col-lg-2"></div>
                         <div class="col-lg-4 pr-detail " style="text-align:center;  ">
-                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
-    margin-right: 70px; text-align:center;">
+                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;margin-right: 70px; text-align:center;">
                                 <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="width: 160px;"/>
                                 <p class="" style="margin-top: 10px;">Cultural Secretary PG</p>
 
@@ -371,8 +373,7 @@
                         </div>
 
                         <div class="col-lg-4 pr-detail"style="text-align:center;">
-                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;
-    margin-right: 70px; text-align:center;">
+                            <div class="only-img rounded" style="padding-top:10px;margin-left: 70px;margin-right: 70px; text-align:center;">
                             <img class="rounded-circle" src="{% static 'site/img/presi.jpg'%}" style="    width: 160px;"/>
                             <p class="" style="margin-top: 10px;">Cultural Secretary UG</p>
                             <div class="detail" >
