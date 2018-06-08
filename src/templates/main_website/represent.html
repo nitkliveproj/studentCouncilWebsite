@@ -5,7 +5,8 @@
 		<title>Meet The representatives</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js?ver=1.7.0'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style type="text/css">
@@ -37,6 +38,9 @@
                 color: white;
                 font-size: 17px;
             }
+            .head {
+    padding:2.50%;
+    }
             .nav-item{
                 text-align:center;
             }
@@ -50,13 +54,30 @@
             }
             .pr-detail:hover .only-img{
                 background-color:#a5c6ff;
+                box-shadow: 0 10px 15px #ddd;
                 position:absolute;
                 z-index:1;
             }
             .detail {
                 display:none;
             }
+            .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  {
+                color: #495057 !important;
+
+            }
+            .nav-item {
+            color:white;
+            }
+            .nkfooter
+            {
+              position:fixed;
+              left:0px;
+              bottom:0px;
+              height:155px;
+              width:100%;
+            }
         </style>
+
 	</head>
 
 	<body style="background-image: url({% static 'main_website/images/beach.jpg'%});background-size: cover;">
@@ -68,7 +89,19 @@
   		</a>
 		</h4>
 		</div>-->
-
+        <script type="text/javascript">
+			$(window).scroll(function() {
+			if ($(this).scrollTop() < 10) {
+			
+			$(".nkfooter").slideUp();
+			
+			} else {
+			
+			$(".nkfooter").slideDown();
+			
+			}
+			});
+		</script>
 
 		<div class="sticky-top">
 			<nav class="navbar navbar-expand-xl bg-dark navbar-dark">
@@ -159,11 +192,11 @@
 		</div>
 
 
-        <div class="container rounded" style="margin-top: 20px;padding-top: 15px;background-color: white;">
+        <div class="container rounded" style="margin-top: 20px;padding-top: 15px;background-color: #19191942;;">
             <nav>
                 <div class="nav nav-tabs " id="nav-tab" role="tablist">
                     <a class="col-lg-1"></a>
-                    <a class="nav-item nav-link active col-lg-2" id="nav-core_member-tab" data-toggle="tab" href="#nav-core_member" role="tab" aria-controls="nav-core_member" aria-selected="true">Core Members</a>
+                    <a class="nav-item nav-link active col-lg-2" id="nav-core_member-tab" data-toggle="tab" href="#nav-core_member" role="tab" aria-controls="nav-core_member" aria-selected="true" >Core Members</a>
                     <a class="nav-item nav-link col-lg-2" id="nav-team_engineer-tab" data-toggle="tab" href="#nav-team_engineer" role="tab" aria-controls="nav-team_engineer" aria-selected="false">Team Engineer</a>
                     <a class="nav-item nav-link col-lg-2" id="nav-team_incident-tab" data-toggle="tab" href="#nav-team_incident" role="tab" aria-controls="nav-team_incident" aria-selected="false">Team Incident</a>
                     <a class="nav-item nav-link col-lg-2" id="nav-secretaries-tab" data-toggle="tab" href="#nav-secretaries" role="tab" aria-controls="nav-secretaries" aria-selected="false">Secretaries</a>
@@ -395,9 +428,13 @@
 
 
 
+<div class="head">
+   
+</div>
+<div class="head">
+ </div>
 
-
-
+        <div class="nkfooter">
 		<div class="container-fluid col-lg-12 " style="margin-top: 20px; position :absolute;">
 		<nav class="navbar navbar-expand-xl bg-dark navbar-dark rounded sticky-top" style="display: block;">
 
@@ -429,7 +466,7 @@
 		</nav>
 		</div>
 
-
+    </div>
 
 
 
