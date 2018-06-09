@@ -5,6 +5,7 @@
 		<title>NITK Student Council</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js?ver=1.7.0'></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -22,6 +23,9 @@
 				left: 10px;
 				width: 300px;
 			}
+			.head {
+    padding:2.50%;
+    }
 			.newsholder ul
 			{
   				list-style:none;
@@ -58,7 +62,14 @@
   				color: white;
   				font-size: 17px;
 			}
-			
+			.nkfooter
+            {
+              position:fixed;
+              left:0px;
+              bottom:0px;
+              height:155px;
+              width:100%;
+            }
 		</style>
 	
 	</head>
@@ -71,6 +82,21 @@
     	<span class="wrap" style="border-right: 0.08em solid #fff;"></span>
   		</a>
 		</p>-->
+		
+		<script type="text/javascript">
+			$(window).scroll(function() {
+			if ($(this).scrollTop() < 100) {
+			
+			$(".nkfooter").slideUp();
+			
+			} else {
+			
+			$(".nkfooter").slideDown();
+			
+			}
+			});
+		</script>
+		
 		<div class="sticky-top">
 			<nav class="navbar navbar-expand-xl bg-dark navbar-dark">
 				<div class="container-fluid">
@@ -305,7 +331,10 @@
 			</div>
 		</div>
 		<br/><br/><br/>
-		<div class="">
+		<div class="head">
+		</div>	
+	<div class="nkfooter">
+		<div class=" ">
 			<div class="container-fluid col-lg-12 " style="margin-top: 20px; ">
 				<nav class="navbar navbar-expand-xl bg-dark navbar-dark rounded sticky-top" style="display: block;">
 
@@ -337,6 +366,7 @@
 				</nav>
 			</div>
 		</div>
+	</div>	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
